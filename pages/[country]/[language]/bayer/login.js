@@ -1,11 +1,20 @@
-import React from 'react'
+import LoginPage from "../../../../components/common/Login/LoginPage";
 
-const login = () => {
+export default function Login() {
+
   return (
     <div>
-      
+      <LoginPage />
     </div>
-  )
+  );
 }
 
-export default login
+export async function getServerSideProps() {
+  // Fetch data from an API or database
+  
+  return {
+    props: {
+      data: 'No data available',
+    },
+  };
+}

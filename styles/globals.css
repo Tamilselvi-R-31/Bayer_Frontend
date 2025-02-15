@@ -1,12 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    text-align: center;
-  }
-  
-  /*Header component Css*/
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
 .header {
   background-color: #333;
   color: white;
@@ -16,6 +15,137 @@ body {
 .header ul {
   list-style: none;
   padding: 0;
+}
+
+.header ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-content {
+  padding: 40px;
+}
+
+.featured-topics {
+  background: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.topics-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.topic-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.topic-card h3 {
+  font-size: 18px;
+}
+
+.topic-card p {
+  font-size: 14px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  background: #444;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.flex-login {
+  height: 100vh; /* Ensures the full height of the page is used */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+.login-container {
+  background-color: #fff;
+  padding: 20px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px; /* Optional for rounded corners */
+}
+
+/* Heading styles */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Input and label styles */
+label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: lightblue;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 0.875rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #eda82a; /* Light blue background */
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #eda82a; /* Hover effect */
+}
+
+.links-container a {
+  display: block; /* Make each link take a full line */
+  margin-bottom: 10px; /* Add space between the two links */
   
 
 }
