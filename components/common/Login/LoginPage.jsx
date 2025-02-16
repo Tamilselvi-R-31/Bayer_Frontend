@@ -40,6 +40,7 @@ function LoginPage() {
     };
 
     return (
+        <div className="flex-login">
         <div className="login-container"> {/* Wrap in login-container */}
             <h1>Login</h1>
             <form onSubmit={handleSubmit}> {/* Added form tag */}
@@ -69,6 +70,7 @@ function LoginPage() {
                 </div>
 
             </form>
+        </div>
         </div>
     );
 }
